@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>网易网页游戏</title>
+		<link type="text/css" rel="stylesheet" href="http://img1.cache.netease.com/game/css09/style.css"/>
+		<link type="text/css" rel="stylesheet" href="http://img1.cache.netease.com/cnews/img09/channel_nav.css"/>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+<!--提示样式-->
+<style type="text/css">
+.login-tiparea {
+	background: none repeat scroll 0 0 #FAE4E4;
+	border: 1px solid #F9C3C3;
+	padding: 3px 7px;
+	position: relative;
+	visibility: hidden;
+	top: 0px;
+	left: 0px;
+	width: 211px;
+	z-index: 10;
+}
+.autologin-tiparea {
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-top: 5px;
+	visibility: visible;
+	width: 194px;
+}
+.login-tiparea-close,.login-tiparea-top,.login-tiparea-bottom {
+	background:
+		url("http://img2.cache.netease.com/t/img10/sprites/i_100702.png")
+		no-repeat scroll left top transparent;
+}
+.login-tiparea-top,.login-tiparea-bottom {
+	height: 7px;
+	overflow: hidden;
+	position: absolute;
+	width: 12px;
+}
+.login-tiparea-top {
+	background-position: -32px -282px;
+	left: 41px;
+	top: -7px;
+}
+.login-tiparea-close {
+	background-position: 0 -282px;
+	height: 9px;
+	overflow: hidden;
+	position: absolute;
+	right: 5px;
+	text-indent: -9999px;
+	top: 8px;
+	width: 9px;
+}
+</style>
+	</head>
+	<body>
+		<div class="warp-all">
+			<div class="warp-headbg">
+				<div class="header">
+					<h1>
+						网易网页游戏
+					</h1>
+				</div>
+				<div class="nav">
+					<!--\#include virtual="/n/include/wanNav.html" -->
+					<!--\#include virtual="/n/include/recommend.html" -->
+				</div>
+				<span class="blank10"></span>
+				<div class="area clearfix">
+					<div class="colL">
+						<div class="login">
+							<div class="title cwBlue">
+								网易通行证
+							</div>
+							<span class="blank3"></span>
+							<div class="user-login" id="userloginB">
+								<form target="_self" method="post"
+									action="https://reg.163.com/logins.jsp" id="loginForm">
+									<input type="hidden" value="http://test.reg.163.com/wan.html"
+										id="loginToUrl" name="url" />
+									<p>
+										<label>
+											帐号：
+										</label>
+										<input type="text"
+											onblur="if(this.value==''){this.value='如 name@example.com';this.style.color='#bbbbbb';}"
+											onfocus="if(this.value=='如 name@example.com'){this.value='';this.style.color='#000000';}"
+											id="username" value="如 name@example.com" name="username"
+											class="loginform-txtin" />
+									</p>
+									<p>
+										<label>
+											密码：
+										</label>
+										<input type="password" id="password" name="password"
+											class="loginform-txtin" />
+									</p>
+									<p>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<label>
+											<input type="checkbox" value="1" name="savelogin"
+												class="loginform-check" onmouseout="hideDiv(event);"
+												onmouseover="showDiv(event);" />
+											记住登录帐号
+										</label>
+										&nbsp;&nbsp;
+										<a href="http://reg.163.com/RecoverPassword.shtml"
+											class="forgetpw">忘记密码</a>
+									</p>
+									<p>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="submit" class="btn-login" value="登陆" />
+										&nbsp;
+										<a
+											href="http://reg.163.com/reg/reg.jsp?product=wan&amp;url=http://wan.163.com/&amp;loginurl=http://wan.163.com"
+											class="btn-reg">注册</a>
+									</p>
+									<p class="cRed">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 登录网易通行证，就可玩。
+									</p>
+								</form>
+							</div>
+							<div id="welcomeBlock" class="welcome" style="display: none;">
+								<p>
+									欢迎您&nbsp;&nbsp;
+									<span class="cRed">xiaoxin@163.c...</span><span class="cBlue">[<a
+										target="_self"
+										href="http://reg.163.com/Logout.jsp?url=http://test.reg.163.com/wan.html">安全退出</a>]</span>
+								</p>
+								<p>
+									<span class="cBlue fB">您最近玩过的游戏：</span>
+								</p>
+								<div class="gs-list">
+									<a href="http://v.auto.163.com/video/2011/4/V/U/V712FNAVU.html"
+										class="gs-pic"><img height="74" width="72"
+											src="http://vimg3.ws.126.net/image/snapshot/2011/4/V/V/V712FNAVV_90~68.jpg"
+											alt="多款首发车抢看" />
+									</a>
+									<h4 class="cBlue">
+										游戏：
+										<a href="#">天地英雄</a>
+									</h4>
+									<h4 class="cBlue">
+										服务器：
+										<a href="#">血雨江湖</a>
+									</h4>
+									<a href="" class="gng-bt">继续游戏</a>
+								</div>
+								<p>
+									<span class="cBlue"><a href="#">三国天下</a> > <a href="#">火烧新野</a>
+									</span><span class="right more">[<a href="#">更多</a>]</span>
+								</p>
+							</div>
+							<div id="hidDiv" style="display: none; position: absolute;">
+								<div class="login-tiparea autologin-tiparea"
+									id="autologin_tiparea">
+									<div class="login-tiparea-top"></div>
+									<a title="关闭"
+										onclick=$('#autologin_tiparea').addCss('visibility:hidden');
+									href="javascript:;" class="login-tiparea-close"></a>
+									<p>
+										为了您的信息安全，请不要在网吧或公用电脑上使用此功能！
+									</p>
+								</div>
+							</div>
+							<script type='text/javascript'>
+								function showDiv(e) {
+									var o = document.getElementById("hidDiv");
+									o.style.left = e.clientX - 45 + "px";
+									o.style.top = e.clientY + 10 + "px";
+									o.style.display = "block";
+								}
+								function hideDiv(e) {
+									var o = document.getElementById("hidDiv");
+									o.style.display = "none";
+								}
+							</script>
+						</div>
+					</div>
+					<div class="colR">
+						<div class="foc-block clearfix">
+							<div class="hotico"></div>
+							<div class="focusImg-containers">
+								<div class="content " id="fct-3">
+									<img width="575" height="165"
+										src="http://img4.cache.netease.com/game/2011/4/20/20110420134552dc5c0.jpg" />
+								</div>
+								<div class="content " id="fct-2">
+									<img width="575" height="165"
+										src="http://img4.cache.netease.com/game/2011/3/23/20110323140908d14b0.jpg" />
+								</div>
+								<div class="content current" id="fct-1">
+									<img width="575" height="165"
+										src="http://img4.cache.netease.com/game/2011/3/16/20110316184744c1734.jpg" />
+								</div>
+							</div>
+							<ul class="focusImg-nav">
+								<li id="fnav-3"></li>
+								<li id="fnav-2"></li>
+								<li id="fnav-1"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<span class="blank10"></span>
+				<div class="area clearfix">
+					<div class="colL">
+						<div class="gg">
+							<div class="title">
+								<ul id="ti-tabs">
+									<li class="active">
+										新闻公告
+									</li>
+									<li class="ggtab1">
+										最新活动
+									</li>
+								</ul>
+							</div>
+							<div id="tab-contents">
+								<div class="tab-contents cwGray active">
+									<ul class="list12">
+										<li>
+											<span class="right">04-27</span><a
+												href="http://game.163.com/11/0427/10/72L1TB8A00314IG7.html">[公告]
+												天地英雄23区火爆开启</a>
+										</li>
+										<li>
+											<span class="right">04-26</span><a
+												href="http://game.163.com/11/0426/10/72IE3JQ800314IG7.html">[公告]
+												天地英雄23区火爆开启</a>
+										</li>
+										<li>
+											<span class="right">04-25</span><a
+												href="http://game.163.com/11/0425/10/72FTBAKS00314IG7.html">[公告]
+												天地英雄23区火爆开启</a>
+										</li>
+										<li>
+											<span class="right">04-22</span><a
+												href="http://game.163.com/11/0422/10/7286IRM400314IG7.html">[公告]
+												天地英雄23区火爆开启</a>
+										</li>
+										<li>
+											<span class="right">04-21</span><a
+												href="http://game.163.com/11/0421/10/725INEGN00314IG7.html">[公告]
+												天地英雄23区火爆开启</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-contents cwGray" id="tab-contents">
+									<ul class="list12">
+									#foreach($one in $activityList)
+										<li>
+											<span class="right">$!stringUtil.substr($!one.starttime,5,9)</span>
+											<a href="$!one.activityUrl">$!one.activityName</a>
+										</li>
+									#end
+									</ul>
+								</div>
+							</div>
+						</div>
+						<span class="blank6"></span>
+						<div class="hd">
+							<a href="#"><img
+									src="http://img4.cache.netease.com/game/2011/3/23/20110323140908d14b0.jpg"
+									alt="#" width="226" height="96" />
+							</a>
+						</div>
+					</div>
+					<div class="colR">
+						<div class="ltitle">
+							<span class="right cwOrange">即将开服游戏：
+							#foreach($one in $openingGameList)
+								#if($velocityCount==3)
+								<a href="$one.gameUrl">$one.gameName</a>
+								#else
+								<a href="$one.gameUrl">$one.gameName</a> |  
+								#end
+							#end
+								[<a href="#">更多</a>]
+							</span>
+							<h2 class="cwBlue fB">
+								热门游戏推荐
+							</h2>
+						</div>
+						<div class="blank15"></div>
+						<div class="hotgame">
+							<div class="ctrl-prev">
+								<a href="javascript:manualScroll1.start(223, 'right');"
+									class="mod-scroll-ctrl-prev" target="_self">往左</a>
+							</div>
+							<div class="ctrl-body">
+								<div>
+									<ul class="" id="scrollPic1">
+									#foreach($one in $hotGameList)
+										<li>
+											<a href="$one.gameUrl">
+												<img title="$one.gameName" src="$one.hotImage2"	height="140" width="210">
+											</a>
+											<p>
+												$one.gameName [$!stringUtil.substr($!one.starttime,5,14)]
+											</p>
+											<p class="cwBlue">
+												<a href="$one.gameUrl">注册</a> |
+												<a href="$one.rechargeUrl">充值</a>
+												<a href="$one.gameUrl" class="entergame">立即游戏</a>
+											</p>
+										</li>
+									#end
+									</ul>
+								</div>
+							</div>
+							<div class="ctrl-next">
+								<a href="javascript:manualScroll1.start(223, 'left');"
+									class="mod-scroll-ctrl-next" target="_self">往右</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--资料库部分，暂未添加-->
+				<span class="blank10"></span>
+				<div class="area clearfix">
+					<div class="colL">
+						<div class="title1">
+							<h2>
+								近期开服推荐
+							</h2>
+						</div>
+						<div class="title2">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										时间
+									</td>
+									<td width="85">
+										游戏
+									</td>
+									<td width="85">
+										服务器
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="kf">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								#foreach($one in $recentServerList)
+								<tr>
+									<td>
+										$!stringUtil.substr($!one.starttime,5,14)
+									</td>
+									<td width="85">
+										$!one.webGame.gameName
+									</td>
+									<td width="85">
+										$!one.serverName
+									</td>
+								</tr>
+								#end
+							</table>
+						</div>
+						<span class="blank10"></span>
+						<div class="title3">
+							<h2>
+								领新手卡
+							</h2>
+						</div>
+						<div class="title2">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										游戏名称
+									</td>
+									<td width="90" align="left">
+										卡名称
+									</td>
+									<td width="60">
+										领号
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="fh">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										飘渺仙剑
+									</td>
+									<td width="90" align="left" class="cwBlue">
+										1服精英新手卡
+									</td>
+									<td class="lh">
+										<a href="#">领号</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<span class="blank10"></span>
+						<div class="title4">
+							<h2>
+								客服中心
+							</h2>
+						</div>
+						<div class="cs">
+							<div class="onsev">
+								<a href="#">在线咨询</a>
+							</div>
+							<p>
+								<em>客服电话：</em>010-12345678
+							</p>
+							<p>
+								<em>客服邮箱：</em>fdwas@163.com
+							</p>
+							<p>
+								<em>客服<span class="qq"></span>QQ：</em>123456789
+							</p>
+						</div>
+					</div>
+					<div class="colR">
+						<div class="ltitle">
+						<span class="right cwOrange">
+							#foreach($one in $typeList)
+								#if($velocityCount!=5)
+								<a href="/$!type.propertyEname/">$!type.propertySname</a> | 
+								#else
+								<a href="/$!type.propertyEname/">$!type.propertySname</a> 
+							[<a href="#">更多</a>]
+						</span>
+							<h2 class="cwBlue fB">
+								更多游戏推荐
+							</h2>
+						</div>
+						<div class="moreg">
+							<ul>
+							#foreach($type in $typeList)
+							#set($list = $gameMap.get($type.id))
+								#foreach($one in $list)
+								<li>
+									<div class="sgame">
+										<a href="$!one.gameUrl">
+											<img title="$!one.gameName"	src="$!one.gameImage"	height="70" width="70">
+										</a>
+										<p class="cwOrange">$!one.gameName</p>
+										<p class="cwBlue">	类型：$type.propertySname</p>
+										<p class="cwBlue">	人气：暂无</p>
+										<span class="blank10"></span>
+										<span class="cwBlue lg">
+											<a href="#">投票</a> | <a href="#">领号</a> <a href="$one.gameUrl" class="lgame">立即游戏</a>
+										</span>
+									</div>
+								</li>
+								#end
+							#end
+							</ul>
+						</div>
+					</div>
+				</div>
+				<span class="blank20"></span>
+				<!--\#include virtual="/n/include/footer.html" -->
+			</div>
+		</div>
+		<script type="text/javascript" language="javascript"
+			src="http://img1.cache.netease.com/cnews/js/ntes_jslib_1.x.js"
+			charset="gb2312"></script>
+		<!--登陆相关-->
+		<script src="http://wan.163.com/js/login-usernamebind.js"
+			type="text/javascript" charset="gb2312"></script>
+		<script src="http://wan.163.com/js/checklogin.js"
+			type="text/javascript" charset="gb2312"></script>
+		<script type="text/javascript" language="javascript" src="index.js"
+			charset="gb2312"></script>
+		<!--登陆相关-->
+
+		<script language="javascript" type="text/javascript">
+//<![CDATA[	   
+//导航菜单
+
+$("#mainnav > li").addEvent("mouseover", function(e) {
+		$(this).$("ul").addCss("display:block;");
+});
+$("#mainnav > li").addEvent("mouseout", function(e) {
+		$(this).$("ul").addCss("display:none;");
+});
+$("#mainnavBt1").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt1'); });
+$("#mainnavBt1").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt1'); });
+$("#mainnavBt2").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt2'); });
+$("#mainnavBt2").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt2'); });
+$("#mainnavBt3").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt3'); });
+$("#mainnavBt3").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt3'); });
+$("#mainnavBt4").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt4'); });
+$("#mainnavBt4").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt4'); });
+$("#mainnavBt5").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt5'); });
+$("#mainnavBt5").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt5'); });
+$("#mainnavBt6").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt6'); });
+$("#mainnavBt6").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt6'); });
+function getParent(e, elem, type) {
+	var parent = e.relatedTarget;
+	if ( !e.relatedTarget && e.toElement && type=="mouseleave" ) {
+		parent = e.toElement ;
+	}
+	else if ( !e.relatedTarget && e.fromElement && type=="mouseenter" ) {
+		parent = e.fromElement ;
+	}
+	while ( parent && parent != elem )
+		try { parent = parent.parentNode; }
+		catch(e) { parent = elelm; }
+	return parent;
+}
+//]]>
+</script>
+		<script type="text/javascript"
+			src="http://wan.163.com/js/gamesearch_suggest.js"></script>
+		<script type="text/javascript">
+var gameSuggest = new ntesGameSuggest({
+	// 输入框id
+	inputid: "socode2",
+	// 记录数
+	max: 8,
+	tooltip: "名称\\拼音",
+	// 选中某一项
+	callback: function(item){
+		url = item["url"];
+		window.open(url);
+	}
+});
+// 点击查行情
+NTES.event.addEvent(NTES("#wanSearch"),"click",function(){
+         var gamename = document.getElementById('socode2').value;
+         if(gamename =='名称\\拼音'){
+                  alert('请输入要查找的游戏名称或拼音');
+         }else if(gameSuggest.aSug.length==0){
+                  alert("没有您要查找的游戏");
+         }else if(gameSuggest.aSug.length==1){
+		gameSuggest.oP.callback(gameSuggest.aSug[0]);
+	}else{
+                  for(var i=0;i<gameSuggest.aSug.length;i++){
+                      if(gamename==gameSuggest.aSug[i].name){
+                          gameSuggest.oP.callback(gameSuggest.aSug[i]);
+                          break;
+                      }
+                  }
+                  if(i==gameSuggest.aSug.length){
+		    alert("没有您要查找的游戏");
+                      return;
+                  }
+	}
+});
+
+//按钮效果
+NTES("#wanSearch").addEvent("mouseover",function(){
+	NTES("#wanSearch").style.color="#EE5C29";
+}).addEvent("mouseout",function(){
+	NTES("#wanSearch").style.color="#41899f";
+})
+</script>
+
+		<script language="javascript" type="text/javascript">
+//<![CDATA[	   
+new NTES.ui.Slide($("#ti-tabs > li"), $("#tab-contents > div"), "active", "mouseover");
+new NTES.ui.Slide($("#bd-tabs > li"), $("#bd-contants > li"), "active", "click");
+new NTES.ui.Slide($("#bd-tabs1 > li"), $("#bd-2 > li"), "active", "mouseover");
+new NTES.ui.Slide($("#bd-tabs2 > li"), $("#bd-3 > li"), "active", "mouseover");
+new NTES.ui.Slide($("#bd-tabs3 > li"), $("#bd-4 > li"), "active", "mouseover");
+new NTES.ui.Slide($("#bd-tabs4 > li"), $("#bd-5 > li"), "active", "mouseover");
+new NTES.ui.Slide( NTES(".focusImg-nav li"), NTES(".focusImg-containers .content"), "current", "click",5000);
+
+</script>
+		<script type="text/javascript" language="javascript"
+			src="http://img1.cache.netease.com/cnews/js/ntes_jslib_ui_0.x.js"
+			charset="gb2312"></script>
+		<script type="text/javascript">
+var manualScroll1 = new NTES.ui.Marquee(NTES("#scrollPic1"), "left", 10, 10);
+</script>
+	</body>
+</html>

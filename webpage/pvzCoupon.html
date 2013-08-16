@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>植物大战僵尸</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link type="text/css" rel="stylesheet" href="http://img1.cache.netease.com/game/img/webgame/quickReg.css" /> 
+</head>
+<body>
+<div id="head">
+	<ul id="nav">
+		<li><a href="#"><img src="images/jrgw.jpg" /></a></li>
+		<li><a href="#"><img src="images/jrlt.jpg" /></a></li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="main">
+<div id="login">
+<form id="form" style="display:block;" action="https://reg.163.com/logins.jsp" method="post" target="_self">
+账号：<input type="text" id="username" name="username" /><br />
+密码：<input type="password" id="password" name="password" />
+<input type="hidden" name="url" id="loginToUrl" value="http://wan.163.com/index.do">
+<input type="submit" id="dl" name="dl" value=" " />
+<input type="button"id="zc" name="zc" value=" "  
+onclick="document.getElementById('login-content').style.display='block';" />
+</form>
+<form id="dlh" style="display:none;"><p>欢迎回来：YouKia</p><br /><input type="submit" id="ksyx" value=" " /></form>
+</div>
+<div id="xuanfu"><p>网易2服</p></div>
+<div id="libao">
+<form id="form2" action="http://wan.163.com/service/pvzCoupon.do" method="post" target="_self">
+<input type="text" id="card" name="card"/>
+<input type="text" id="server" name="server" value="s2"/>
+<input type="submit" id="dh" name="dh" value=" " />
+</form>
+</div>
+</div>
+<div id="foot">
+<ul id="shuoming">
+<li>1.注册/登录网易通行证后，在礼包领取页面输入序列号，选择你要兑换的服务器，点击“兑换”即可获得奖品。</li>
+<li>2.兑换成功后，礼包将直接发送到《植物大战僵尸Online》你所选择的对应服务器游戏内仓库。</li>
+<li>3.此活动只针对网易2服，且每个账号可分别兑换一次两种不同礼包。每个序列号只可使用一次。</li>
+</ul>
+<div id="copyright">
+<p>植物大战僵尸online为四川天上友嘉网络科技有限公司旗下产品<br />
+ICP证川 B2-20090012　川网文[2010]0529-006 特批文号：科技与数字[2011]079号<br />
+免责声明
+</p>
+</div>
+</div>
+
+
+
+
+<div>
+<div id="login-content" style="display:none; background-color:#000000;">
+<div id="close" onclick="document.getElementById('login-content').style.display='none';"></div>
+<div id="reg">
+<iframe width="400" height="300" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="register.html" allowTransparency="true"></iframe>
+</div>
+
+<!-- START NetEase Devilfish 2006 -->
+<div id="track_iframe" style="display:none"></div> 
+<script type="text/javascript" charset="gb2312" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).last.js"></script> 
+<script type="text/javascript"> 
+		 nie.use(["nie.util.bigUrs"], function(){	
+			  var bigUrs = nie.util.bigUrs.create();
+			  bigUrs.type=1;      //类别（2：长版本,对应css文件）
+			  bigUrs.stats.pv=true;	//是否统计记录
+			  bigUrs.stats.monitor=true;   //是否监控，侦测快速注册是否正常运行
+			  bigUrs.stats.regTime=true;    //是否记录注册过程耗时时间
+			  bigUrs.stats.log=true;//是否需要记录注册log
+			  
+			  
+			  bigUrs.msgO = {
+				  msg: function() {
+					  return jQuery("#" + bigUrs.msgID.msg, window.parent.document)
+				  },
+				  title: function() {
+					  return jQuery("#" + bigUrs.msgID.title, window.parent.document)
+				  },
+				  closeBtn: function() {
+					  return jQuery("#" + bigUrs.msgID.closeBtn, window.parent.document)
+				  },
+				  bg: function() {
+					  return jQuery("#" + bigUrs.msgID.bg, window.parent.document)
+				  },
+				  con: function() {
+					  return jQuery("#" + bigUrs.msgID.con, window.parent.document)
+				  }
+			  };
+			  bigUrs.getMsgHTML = function() {
+				  var c = bigUrs.regData;
+				  c = "<div class='not163MailBox'><h1>\u611f\u8c22\u6ce8\u518c\uff01\u8bf7\u7acb\u5373\u6fc0\u6d3b\u5e10\u53f7\u3002</h1><h3>\u8bf7\u60a8\u767b\u5f55\u90ae\u7bb1 <b>" + c.username + "</b> \u6839\u636e\u786e\u8ba4\u90ae\u4ef6\u64cd\u4f5c\u5373\u53ef\u3002</h3>" + (c.mailUrl ? "<h2><a class='btn' href='" + c.mailUrl + "' target='_blank'>\u7acb\u5373\u67e5\u770b\u90ae\u4ef6</a></h2>": "<h2>\u8bf7\u7acb\u5373\u67e5\u6536\u9a8c\u8bc1\u90ae\u4ef6</h2>") + "<ul class='tips'><li>\u8fd8\u6ca1\u6709\u6536\u5230\u9a8c\u8bc1\u90ae\u4ef6\uff1f<ol><li>\u5c1d\u8bd5\u5230\u5e7f\u544a\u90ae\u4ef6\u3001\u5783\u573e\u90ae\u4ef6\u76ee\u5f55\u91cc\u627e\u627e\u770b\uff1b</li><li>\u518d\u6b21<a href='" + bigUrs.aHref + "' target='_self' class='sendMailBtn'>\u53d1\u9001\u6ce8\u518c\u9a8c\u8bc1\u90ae\u4ef6</a>\uff1b</li><li>\u5982\u679c\u91cd\u53d1\u6ce8\u518c\u9a8c\u8bc1\u90ae\u4ef6\u4f9d\u7136\u6ca1\u6709\u6536\u5230\uff0c\u8bf7<a class='reReg' target='_self' href='" + bigUrs.aHref + "'>\u91cd\u65b0\u6ce8\u518c</a>\u3002</li></ol></li></ul></div>";
+				  jQuery(".not163MailBox a.sendMailBtn", window.parent.document).live("click", bigUrs.sendMail);
+				  jQuery(".not163MailBox a.reReg", window.parent.document).live("click",
+				  function() {
+					  window.parent.location.reload()
+				  });
+				  return c
+			  };
+			  bigUrs.showMsg = function(c) {
+				  if (typeof c == "object") {
+					  var e = function(A) {
+						  return typeof c[A] != "undefined" ? c[A] : null
+					  },
+					  m = e("result"),
+					  s = e("url"),
+					  t = e("confirmFn"),
+					  n = e("closeBtnFn"),
+					  o = e("username"),
+					  x = e("is163Mail");
+					  e("mailUrl");
+					  var K = e("msg");
+					  e = e("status");
+					  var q = jQuery(window.parent.document),
+					  y = q.width(),
+					  C = "_self";
+					  q = {
+						  top: (q.height() - bigUrs.msgSize.large.h) / 2 + q.scrollTop(),
+						  left: (y - bigUrs.msgSize.large.w) / 2 + q.scrollLeft(),
+						  width: bigUrs.msgSize.large.w
+					  };
+					  bigUrs.msgO.bg().length == 0 ? jQuery("<div>", {
+						  id: bigUrs.msgID.bg,
+						  css: {
+							  top: 0,
+							  left: 0,
+							  width: y,
+							  height: jQuery(window.parent.document).height()
+						  }
+					  }).appendTo(jQuery(window.parent.document.body)) : bigUrs.msgO.bg().show();
+					  if (bigUrs.msgO.msg().length == 0) {
+						  jQuery("<div>", {
+							  id: bigUrs.msgID.msg,
+							  css: q,
+							  html: '<div id="' + bigUrs.msgID.title + '">\u6ce8\u518c\u6e38\u620f\u5e10\u53f7</div><a target="_self" id="' + bigUrs.msgID.closeBtn + '" href="' + bigUrs.aHref + '">X</a><div id="' + bigUrs.msgID.con + '"></div>'
+						  }).appendTo(jQuery(window.parent.document.body));
+						  bigUrs.msgO.closeBtn().live("click",
+						  function() {
+							  bigUrs.runStats("log", 111);
+							  bigUrs.hideMsg();
+							  jQuery.isFunction(n) && n()
+						  })
+					  } else {
+						  bigUrs.msgO.msg().css(q);
+						  bigUrs.clearMsg()
+					  }
+					  bigUrs.msgO.msg().show();
+					  if (m && s != null) {
+						  C = "_blank";
+						  s += (s.indexOf("?") > 0 ? "&": "?") + "username=" + o
+					  } else s = bigUrs.aHref;
+					  bigUrs.showCaptcha = false;
+					  if (m != null) {
+						  o = bigUrs.msgO.con();
+						  o.removeClass("right error");
+						  if (m && !x && e == 202) {
+							  o.html(bigUrs.getMsgHTML());
+							  jQuery(".not163MailBox", window.parent.document).attr("id", "not163Mail")
+						  } else {
+							  m ? o.addClass("right").html("<p class='info'>\u6ce8\u518c\u6210\u529f\uff01</p>") : o.addClass("error").html("<p class='info'>\u51fa\u9519\u4e86\uff01</p><p class='reason'>" + K + "</p>");
+							  jQuery("<a>", {
+								  href: s,
+								  target: C,
+								  text: "\u786e \u8ba4",
+								  "class": "btn",
+								  click: function() {
+									  bigUrs.runStats("log", 110);
+									  bigUrs.hideMsg();
+									  jQuery.isFunction(t) && t()
+								  }
+							  }).appendTo(bigUrs.msgO.con())
+						  }
+					  }
+				  }
+			  };
+			  bigUrs.regComplete=function(o){
+				 bigUrs.getVal("username");//获取用户填写的信息。参数为input name值。
+				 bigUrs.getUrl();//获取注册成功后需要跳转页面的url。如果没有跳转页，值为null。
+				 bigUrs.clearMsg();//清楚已封装好的信息框里面的信息
+				
+				if(o.result){
+					 jQuery("#track_iframe").append('<iframe src="http://jump.zg.163.com/track.php?tid=3&cache='+rand(9999999)+'&username='+encodeURIComponent(o.username)+"&act=reg"+'&pre='+escape(document.referrer)+'" width="0" height="0"></iframe>');
+				}
+			  
+				if (o.is163Mail){
+					setTimeout(function(){
+						var jump_url = window.document.getElementById("loginToUrl1").value;
+						jQuery('#track_iframe').append('<form id="ursRegForm" name="ursRegForm" method="post" action="https://reg.163.com/logins.jsp" target="_parent"><input type="hidden" name="product" value="ch" /><input type="hidden" name="type" value="1" /><input type="hidden" name="url" id="url" value="' + jump_url + '" /><input type="hidden" name="username" /><input type="hidden" name="password" /></form>');
+						jQuery('#track_iframe input[name=username]').attr('value',jQuery('#reg input[name=username]').attr('value'));
+						jQuery('#track_iframe input[name=password]').attr('value',jQuery('#reg input[name=password]').attr('value'));
+						jQuery('#ursRegForm').submit();
+					}, 1200);
+				} else {
+					 //显示封装好的信息框
+					 bigUrs.showMsg(o);
+			  //	 bigUrs.hideMsg();//隐藏封装好的信息框		 
+				}	 		 
+			  }
+			  bigUrs.init();		
+		}); 
+function rand(num) {
+   return Math.floor(Math.random()*num)+1;
+}
+</script> 
+<!-- END NetEase Devilfish 2006 --> 
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网易网页游戏</title>
+<link type="text/css" rel="stylesheet" href="http://img1.cache.netease.com/game/css09/style.css">
+<link type="text/css" rel="stylesheet" href="http://img1.cache.netease.com/cnews/img09/channel_nav.css">
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="warp-all">
+  <div class="warp-headbg">
+    <div class="header"> </div>
+    <div class="nav">
+      <div class="mainnav">
+        <ul id="mainnav">
+          <li class="onbt1" id="mainnavBt1"><a href="index.html"  target="_self" title="首页">首页</a></li>
+          <li class="" id="mainnavBt2"><a href="myinfo.html"  target="_self" title="用户中心">用户中心</a>
+            <ul class="dd">
+              <li><a href="myinfo.html"  target="_self" title="我的信息">我的信息</a></li>
+              <li><a href="mygame.html"  target="_self" title="玩过的游戏">玩过的游戏</a></li>
+            </ul>
+          </li>
+          <li class="" id="mainnavBt3" onmouseout="this.className=''" onmouseover="this.className='bt3'"><a href="pay.html"  target="_self" title="充值中心">充值中心</a></li>
+          <li class="" id="mainnavBt4" onmouseout="this.className=''" onmouseover="this.className='bt4'"><a href="lastestact.html"  target="_self" title="活动中心">活动中心</a></li>
+          <li class="" id="mainnavBt5" onmouseout="this.className=''" onmouseover="this.className='bt5'"><a href="cs.html"  target="_self" title="客服中心">客服中心</a>
+            <ul class="dd">
+              <li><a href="cs.html"  target="_self" title="客服提问">客服提问</a></li>
+              <li><a href="faq.html"  target="_self" title="常见问题">常见问题</a></li>
+            </ul>
+          </li>
+          <li class="" id="mainnavBt6" onmouseout="this.className=''" onmouseover="this.className='bt6'"><a href="news.html"  target="_self" title="页游资讯">页游资讯</a></li>
+          <li><a href="#"  target="_blank" title="资料库">资料库</a></li>
+          <li><a href="#"  target="_blank" title="论坛">论坛</a></li>
+        </ul>
+      </div>
+      <div class="subnav">最新推荐：<a href="#">长江一号</a> <a href="#">长江二号</a><span class="wan-search">
+        <input type="text" id="socode2" onFocus="this.value=''" class="wan-search-box" value="名称\拼音" autocomplete="off">
+        <input type="button" id="wanSearch" class="wan-search-button" value="搜索">
+        </span></div>
+    </div>
+    <span class="blank10"></span>
+    <div class="area clearfix">
+    <div class="colL">
+    	<div class="login">
+          <div class="title cwBlue">网易通行证</div>
+          <span class="blank3"></span>
+		  		  		   <div class="user-login" id="userloginB" >
+            <form target="_self" method="post" action="https://reg.163.com/logins.jsp"  id="loginForm">
+              <input type="hidden" value="http://test.reg.163.com/wan.html" id="loginToUrl" name="url" />
+              <p>
+                <label>帐号：</label>
+                <input type="text" onblur="if(this.value==''){this.value='如 name@example.com';this.style.color='#bbbbbb';}" onfocus="if(this.value=='如 name@example.com'){this.value='';this.style.color='#000000';}" id="username" value="如 name@example.com" name="username" class="loginform-txtin" />
+              </p>
+              <p>
+                <label>密码：</label>
+                <input type="password" id="password" name="password" class="loginform-txtin" />
+              </p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>
+                  <input type="checkbox" value="1"  name="savelogin" class="loginform-check" onmouseout="hideDiv(event);" onmouseover="showDiv(event);"/>
+                  记住登录帐号</label>
+                &nbsp;&nbsp;<a href="http://reg.163.com/RecoverPassword.shtml" class="forgetpw">忘记密码</a></p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" class="btn-login" value="登陆" />
+                &nbsp;<a href="http://reg.163.com/reg/reg.jsp?product=wan&amp;url=http://wan.163.com/&amp;loginurl=http://wan.163.com" class="btn-reg">注册</a></p>
+              <p class="cRed">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 登录网易通行证，就可玩。</p>
+            </form>
+          </div>
+		            <div id="hidDiv" style="display:none;position:absolute;">
+            <div class="login-tiparea autologin-tiparea" id="autologin_tiparea" >
+              <div class="login-tiparea-top"></div>
+              <a title="关闭" onclick="$('#autologin_tiparea').addCss('visibility:hidden')" href="javascript:;" class="login-tiparea-close"></a>
+              <p>为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</p>
+            </div>
+          </div>
+          <!--提示样式-->
+          <style type="text/css"> 
+        .login-tiparea {
+            background: none repeat scroll 0 0 #FAE4E4;
+            border: 1px solid #F9C3C3;
+            padding: 3px 7px;
+            position: relative;
+            visibility: hidden;
+			top:0px;
+			left:0px;
+            width: 211px;
+            z-index: 10;
+        }
+        .autologin-tiparea {
+            padding-bottom: 5px;
+            padding-right: 20px;
+            padding-top: 5px;
+            visibility: visible;
+            width: 194px;
+        }
+        .login-tiparea-close, .login-tiparea-top, .login-tiparea-bottom {
+            background: url("http://img2.cache.netease.com/t/img10/sprites/i_100702.png") no-repeat scroll left top transparent;
+        }
+         
+        .login-tiparea-top, .login-tiparea-bottom {
+            height: 7px;
+            overflow: hidden;
+            position: absolute;
+            width: 12px;
+        }
+         
+        .login-tiparea-top {
+            background-position: -32px -282px;
+            left: 41px;
+            top: -7px;
+        	
+        }
+        .login-tiparea-close {
+            background-position: 0 -282px;
+            height: 9px;
+            overflow: hidden;
+            position: absolute;
+            right: 5px;
+            text-indent: -9999px;
+            top: 8px;
+            width: 9px;
+        }
+		</style>
+		<script type='text/javascript'> 
+            function showDiv(e){
+                var o = document.getElementById("hidDiv"); 
+                o.style.left = e.clientX-45+"px"; 
+                o.style.top = e.clientY+10+"px"; 
+                o.style.display="block";}
+    		function hideDiv(e){
+        		var o = document.getElementById("hidDiv");
+        		o.style.display="none";}
+		</script>
+          
+         
+        </div>
+        <span class="blank10"></span>
+        <div class="colL">
+        <div class="gg">
+          <div class="title">
+            <ul id="ti-tabs">
+              <li class="active">新闻公告</li>
+              <li class="ggtab1">最新活动</li>
+            </ul>
+          </div>
+          <div id="tab-contents">
+            <div class="tab-contents cwGray active" >
+              <ul class="list12">
+                <li><span class="right">04-27</span><a href="http://game.163.com/11/0427/10/72L1TB8A00314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-26</span><a href="http://game.163.com/11/0426/10/72IE3JQ800314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-25</span><a href="http://game.163.com/11/0425/10/72FTBAKS00314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-22</span><a href="http://game.163.com/11/0422/10/7286IRM400314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-21</span><a href="http://game.163.com/11/0421/10/725INEGN00314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+              </ul>
+            </div>
+            <div class="tab-contents cwGray" id="tab-contents">
+              <ul class="list12">
+                <li><span class="right">03-27</span><a href="http://game.163.com/11/0427/10/72L1TB8A00314IG7.html">[公告] 天地英雄23区火爆开启 </a></li>
+                <li><span class="right">04-26</span><a href="http://game.163.com/11/0426/10/72IE3JQ800314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-25</span><a href="http://game.163.com/11/0425/10/72FTBAKS00314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-22</span><a href="http://game.163.com/11/0422/10/7286IRM400314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+                <li><span class="right">04-21</span><a href="http://game.163.com/11/0421/10/725INEGN00314IG7.html">[公告] 天地英雄23区火爆开启</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="blank6"></span>
+        <div class="hd"><a href="#"><img src="http://img4.cache.netease.com/game/2011/3/23/20110323140908d14b0.jpg" alt="#" width="226" height="96" /></a></div>
+      </div>
+      <span class="blank10"></span>
+      <div class="colL">
+        <div class="title1">
+          <h2>近期开服推荐</h2>
+        </div>
+        <div class="title2">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>时间</td>
+              <td width="85">游戏</td>
+              <td width="85">服务器</td>
+            </tr>
+          </table>
+        </div>
+        <div class="kf">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>04-01</td>
+              <td width="85">梦幻修仙</td>
+              <td width="85">双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+            <tr>
+              <td>04-01</td>
+              <td>梦幻修仙</td>
+              <td>双线XX服</td>
+            </tr>
+          </table>
+        </div>
+        <span class="blank10"></span>
+        <div class="title3">
+          <h2>领新手卡</h2>
+        </div>
+        <div class="title2">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>游戏名称</td>
+              <td width="90" align="left">卡名称</td>
+              <td width="60">领号</td>
+            </tr>
+          </table>
+        </div>
+        <div class="fh">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+               <td class="lh"><a href="#">领号</a></td>
+            </tr>
+            <tr>
+              <td>飘渺仙剑</td>
+              <td width="90" align="left" class="cwBlue">1服精英新手卡</td>
+              <td class="lh"><a href="#">领号</a></td>
+            </tr>
+          </table>
+        </div>
+        <span class="blank10"></span>
+        <div class="title4">
+          <h2>客服中心</h2>
+        </div>
+        <div class="cs">
+          <div class="onsev"><a href="#">在线咨询</a></div>
+          <p><em>客服电话：</em>010-12345678</p>
+          <p><em>客服邮箱：</em>fdwas@163.com</p>
+          <p><em>客服<span class="qq"></span>QQ：</em>123456789</p>
+        </div>
+      </div>
+      
+        
+        </div>
+    <div class="colR">
+    <div class="stitle"><span class="right">玩过的游戏</span><h1>我的信息</h1></div>
+        <div class="content">
+    <div class="info clearfix">
+    <div class=" colRI">
+    <div class="xim fB cwBlue" ><a href="http://game.163.com/11/0414/16/71K4PRBE00314J6C.html"><img title="玄武" src="http://img3.cache.netease.com/game/2011/4/22/20110422154143be962.jpg"  height="70" width="70"></a><br />
+修改头像</div>
+</div>
+    <div class=" colLI">
+    <span class="blank20"></span>
+    <h3 class="cwGray">个人资料</h3>
+    <span class="blank20"></span>
+    <table width="50%" border="0" cellspacing="0" cellpadding="0" align="left">
+  <tr>
+    <td class="cwGray">昵称：</td>
+    <td>丫丫</td>
+  </tr>
+  <tr>
+    <td class="cwGray">性别：</td>
+    <td>女</td>
+  </tr>
+  <tr>
+    <td class="cwGray">所在地：</td>
+    <td>中国 北京</td>
+  </tr>
+  <tr>
+    <td class="cwGray">生日：</td>
+    <td>2011年5月4日</td>
+  </tr>
+  <tr>
+    <td class="cwGray">QQ：</td>
+    <td>289510317</td>
+  </tr>
+  <tr>
+    <td class="cwGray">手机：</td>
+    <td>13800138000</td>
+  </tr>
+</table>
+<div class="dotLine2"></div>
+    <h3 class="cwGray">个性签名</h3>
+    <p class="f14px">我就是我，是颜色不一样不一样颜色的火</p>
+    <div class="dotLine2"></div>
+    <h3 class="cwGray">自我介绍</h3>
+    <p class="f14px">我就是我，是颜色不一样不一样颜色的火我就是我，是颜色不一样不一样颜色的火我就是我，是颜色不一样不一样颜色的火我就是我，是颜色不一样不一样颜色的火</p>
+        <div class="dotLine2"></div>
+    <h3 class="cwGray">个人标签</h3>
+    <div id="tagsMap" class="tagsmap"> 
+   
+</div>
+    </div>
+    </div>
+    <span class="blank10"></span>
+    <div class="infx"><span class="x1"><a href="http://gb.corp.163.com/gb/about/overview.html">公司简介</a></span><span class="x2"><a href="http://gb.corp.163.com/gb/about/overview.html">公司简介</a></span> <span class="x3"><a href="http://gb.corp.163.com/gb/about/overview.html">公司简介</a></span></div>
+    <p class="cwOrange"><span class="fB">注：</span>以上操作都叮叮当当</p></div>
+    
+    
+    
+    </div>
+    </div>
+        <span class="blank20"></span>
+
+    <div class="footer">
+
+	<div class="foot">
+
+	<div class="text"><a href="http://t.163.com/zt/feedback">意见反馈</a>　<a href="http://game.163.com/special/wan/disclaimer.html">免责声明</a></div>
+
+	<a href="http://corp.163.com/">About NetEase</a> - <a href="http://gb.corp.163.com/gb/about/overview.html">公司简介</a> - <a href="http://gb.corp.163.com/gb/contactus.html">联系方法</a> - <a href="http://corp.163.com/gb/job/job.html">招聘信息</a> - <a href="http://help.163.com/ ">客户服务</a> - <a href="http://gb.corp.163.com/gb/legal.html">相关法律</a> - <a href="http://emarketing.biz.163.com/">网络营销</a> - <a href="http://sitemap.163.com/">网站地图</a><br />
+
+	网易公司版权所有<br />
+
+	<span class="cRed">&copy;1997-2011</span>
+
+	</div>
+
+</div>
+  </div>
+</div>
+<script type="text/javascript" src="http://img1.cache.netease.com/cnews/js/ntes_jslib_1.x.js" > </script>
+<!--登陆相关-->
+<script src="http://wan.163.com/js/login-usernamebind.js" type="text/javascript" charset="gb2312"></script>
+<script src="http://wan.163.com/js/checklogin.js" type="text/javascript" charset="gb2312"></script>
+<script type="text/javascript" language="javascript" src="index.js" charset="gb2312"></script>
+<!--登陆相关-->
+<script type="text/javascript" >
+
+var tags_1234 = ["标签1","标签2","标签3","标签4","标签5","标签6","标签7","标签8","标签9","标签10"];
+
+(function(){
+	var id = 1234;
+	var left, top;
+	var result = [];
+	var maxIndex = 50
+	
+	result.push('<ul>');
+	var len = tags_1234.length;
+	
+	var n = Math.ceil(Math.sqrt(len));
+	for( var i = 0; i < len; i++ ){
+		left = i%(n) * 410 / (n-1) + Math.floor(Math.random() * (n - i%n) * 10);
+		top = Math.floor(i/n)*105/(n-1)+ Math.floor(Math.random() * 10);
+		var type = i % 10 + 1;
+		result.push('<li class="tag' + type + '" style="left:' + left + 'px; top:' + top + 'px; z-index:' + Math.floor(Math.random() * 2 + 10) + ';">' + tags_1234[i] + '</li>');
+	}
+	result.push('</ul>');
+	
+	$("#tagsMap").innerHTML = result.join("");
+	
+	$("#tagsMap li").addEvent("mousedown", function() {
+		this.style.zIndex = maxIndex++;
+	});
+
+})();
+
+</script>  
+<script language="javascript" type="text/javascript">
+//<![CDATA[	   
+//导航菜单
+
+$("#mainnav > li").addEvent("mouseover", function(e) {
+		$(this).$("ul").addCss("display:block;");
+});
+$("#mainnav > li").addEvent("mouseout", function(e) {
+		$(this).$("ul").addCss("display:none;");
+});
+$("#mainnavBt1").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt1'); });
+$("#mainnavBt1").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt1'); });
+$("#mainnavBt2").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt2'); });
+$("#mainnavBt2").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt2'); });
+$("#mainnavBt3").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt3'); });
+$("#mainnavBt3").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt3'); });
+$("#mainnavBt4").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt4'); });
+$("#mainnavBt4").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt4'); });
+$("#mainnavBt5").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt5'); });
+$("#mainnavBt5").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt5'); });
+$("#mainnavBt6").addEvent("mouseover", function(e) { if(getParent(e, this, "mouseenter") != this)	this.addCss('bt6'); });
+$("#mainnavBt6").addEvent("mouseout", function(e) { if(getParent(e, this, "mouseleave") != this)	this.removeCss('bt6'); });
+function getParent(e, elem, type) {
+	var parent = e.relatedTarget;
+	if ( !e.relatedTarget && e.toElement && type=="mouseleave" ) {
+		parent = e.toElement ;
+	}
+	else if ( !e.relatedTarget && e.fromElement && type=="mouseenter" ) {
+		parent = e.fromElement ;
+	}
+	while ( parent && parent != elem )
+		try { parent = parent.parentNode; }
+		catch(e) { parent = elelm; }
+	return parent;
+}
+//]]>
+</script>
+<script type="text/javascript" src="http://wan.163.com/js/gamesearch_suggest.js"></script>
+<script type="text/javascript">
+var gameSuggest = new ntesGameSuggest({
+
+	// 输入框id
+
+	inputid: "socode2",
+
+	// 记录数
+
+	max: 8,
+
+	tooltip: "名称\\拼音",
+
+	// 选中某一项
+
+	callback: function(item){
+
+		url = item["url"];
+
+		window.open(url);
+
+	}
+
+});
+
+// 点击查行情
+
+NTES.event.addEvent(NTES("#wanSearch"),"click",function(){
+
+         var gamename = document.getElementById('socode2').value;
+
+         if(gamename =='名称\\拼音'){
+
+                  alert('请输入要查找的游戏名称或拼音');
+
+         }else if(gameSuggest.aSug.length==0){
+
+                  alert("没有您要查找的游戏");
+
+         }else if(gameSuggest.aSug.length==1){
+
+		gameSuggest.oP.callback(gameSuggest.aSug[0]);
+
+	}else{
+
+                  for(var i=0;i<gameSuggest.aSug.length;i++){
+
+                      if(gamename==gameSuggest.aSug[i].name){
+
+                          gameSuggest.oP.callback(gameSuggest.aSug[i]);
+
+                          break;
+
+                      }
+
+                  }
+
+                  if(i==gameSuggest.aSug.length){
+
+		    alert("没有您要查找的游戏");
+
+                      return;
+
+                  }
+
+	}
+
+});
+
+//按钮效果
+
+NTES("#wanSearch").addEvent("mouseover",function(){
+
+	NTES("#wanSearch").style.color="#EE5C29";
+
+}).addEvent("mouseout",function(){
+
+	NTES("#wanSearch").style.color="#41899f";
+
+})
+
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[	   
+new NTES.ui.Slide($("#ti-tabs > li"), $("#tab-contents > div"), "active", "mouseover");
+</script>
+</body>
+</html>

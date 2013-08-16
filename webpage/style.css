@@ -1,0 +1,346 @@
+@charset "gb2312";
+body{text-align:left;}
+.warp-all{background:#FFF;min-width:960px;}
+.warp-headbg{background:url(img/headbg.jpg) 50% top no-repeat;}
+.header{ height:89px;}
+.area{ width:960px; margin:0 auto}
+.colL{ width:235px; float:left; overflow:hidden;}
+.colR{ width:725px; float:left; overflow:hidden;}
+.blank10 {clear:both; height:10px; overflow:hidden; display:block;}
+h1{ text-indent:-9999px}
+
+/*公用*/
+.list12 li {background: url(http://img1.cache.netease.com/game/img/dh2/dot.png) 0 8px no-repeat;clear:both;line-height:21px;padding-left:9px;}
+.ggame{height:27px;width:71px; background:url(img/ggame.png) no-repeat; text-indent:-9999px; display:inline-block; line-height:27px}
+.lgame{height:27px;width:71px; background:url(img/lgame.png) no-repeat; text-indent:-9999px; display:inline-block; line-height:27px}
+.dotLine{ background:url(img/dotline.png) bottom repeat-x; clear:both; height:10px; line-height:10px;}
+.dotLine2{ background:url(img/dotline2.png) left top no-repeat; clear:both; height:10px; line-height:10px;}
+.dotLine3{ background:url(img/dotline3.png) left center no-repeat; clear:both; height:10px; line-height:10px;}
+
+
+
+/*导航*/
+.nav{ width:960px;margin:0 auto;height:74px;}
+.mainnav { height:39px; line-height:39px}
+.mainnav li{ float: left;line-height:39px;font-size:12px;text-indent: -9999px; height:39px;position: relative;width:120px; cursor:pointer;}
+.mainnav li a:link,.nav li a:visited{color:#007DB8; text-decoration:none; display:block; outline:none;}
+.mainnav li a:hover{ color:#EE5C29}
+.mainnav .bt1,.mainnav .onbt1 {background:url(img/navh.png) 0 -240px no-repeat;}
+.mainnav .bt2,.mainnav .onbt2 {background:url(img/navh.png) 0 -144px no-repeat;}
+.mainnav .bt3,.mainnav .onbt3 {background:url(img/navh.png) 0 -96px no-repeat;}
+.mainnav .bt4,.mainnav .onbt4 {background:url(img/navh.png) 0 0px no-repeat;}
+.mainnav .bt5,.mainnav .onbt5 {background:url(img/navh.png) 0 -48px no-repeat;}
+.mainnav .bt6,.mainnav .onbt6 {background:url(img/navh.png) 0 -192px no-repeat;}
+.mainnav .bt7{}
+.mainnav .bt8{}
+.mainnav .dd {position:absolute;left:0; top:39px; z-index:99; display:none; background:url(img/navdd.png) no-repeat left top; width:120px; height:50px;}
+.mainnav .dd li{text-indent:1px; height:25px; line-height:25px; text-align:center;}
+.subnav{ height:24px; margin:11px 0px 0px 38px;color:#EE5C29; font-weight:bold}
+.subnav a{ font-weight:normal; color:#007DB8}
+
+
+/*搜索框*/
+.wan-search {margin:-4px 0px 0 535px;width:200px;position: absolute;}
+.wan-search-box { width:138px; height:22px; border:none; float:left; color:#ABB0B3; padding-left:6px; line-height:22px; background:none; margin-right:15px; outline-style:none}
+.wan-search-button { width:30px; height:22px;border:none; float:left;line-height:22px;background:none; color:#41899f;cursor:pointer;}
+.tcbox { position: absolute; z-index:99; border: 1px solid #b0d7e6; background:#FFFFFF; width:155px; line-height:20px;}
+.tcbox li{cursor:pointer; padding:0px 6px;}
+.tcbox .alter { background: #CCEDF7; }
+
+/* 登录框*/
+.login{ background:url(img/urs.png) no-repeat; height:219px;}
+.login .title{font-size:14px; font-weight:bold; padding:15px 0px 0px 45px; height:28px}
+
+/*登陆框样式*/
+.user-login p {
+    margin: 0 0 10px 15px;
+    overflow: hidden;
+}
+.user-login label {
+	color:#666666;
+	font-size:12px;
+}
+
+.user-login .loginform-txtin {
+	background:url(img/login-all.png) no-repeat scroll 0 -36px transparent;
+	border:none;
+    color:#bbbbbb; 
+	padding-top:2px;  
+    height: 23px;  
+	line-height:21px; 
+    width: 161px;
+}
+
+.user-login .loginform-check {margin-right: 5px;margin-bottom:3px;display:inline-block;vertical-align:middle;}
+.user-login .forgetpw{ color:#007db8;}
+.user-login .btn-login{background:url(img/login-all.png) no-repeat scroll 0 0 transparent; height:26px; width:78px; border-style:none; cursor:pointer; text-indent:-9999px; }
+.user-login .btn-reg{ background:url(img/login-all.png) no-repeat scroll -108px 0 transparent; height:26px; width:78px; display:inline-block; vertical-align: top;outline: medium none;text-indent: -9999px;}
+
+/*用户信息*/
+.welcome p{ margin:0 0 12px 12px; overflow:hidden; }
+.welcome .gs-list { margin:0 0 14px 12px; overflow:hidden; }
+.welcome .gs-list .gs-pic{float:left; margin-right:10px; border:1px solid #CCCCCC; }
+.welcome .gs-list h4{ line-height:21px; margin:0;padding:0; }
+.welcome .gs-list .gng-bt{margin-top:3px; background: url("img/login-all.png") no-repeat scroll -212px 0 transparent; display:inline-block; height: 28px; line-height:28px; text-align:center; color:#fff; width: 71px;outline: medium none;}
+.welcome  .more { color:#666666; margin-right:18px; } 
+.welcome  .more a{color:#666666;}   
+    
+
+
+.right{ float:right; }
+.cRed, .cRed:visited, .cRed a:link, .cRed a:visited {
+    color: #EE5C29;
+}
+ 
+.cBlue, .cBlue:visited, .cBlue a:link, .cBlue a:visited {
+    color: #007db8;
+}
+
+
+/*头图*/
+.foc-block{ position:relative; overflow:hidden; padding:8px 0 0 8px; zoom:1; }
+.hotico{position:absolute; top:0; left:0;height:150px;width:151px; background:url(img/hotico.gif) no-repeat scroll 0 0 transparent;  }
+.focusImg-containers{ float:left; }
+.focusImg-containers .content{ display:none; width:610px; height:202px; overflow:hidden; }	
+.focusImg-containers .current{ display:block; }	
+.focusImg-containers #fct-1{ background:url(img/fct-1.jpg) no-repeat scroll 0 0 transparent; }
+.focusImg-containers #fct-2{ background:url(img/fct-2.jpg) no-repeat scroll 0 0 transparent; }	
+.focusImg-containers #fct-3{ background:url(img/fct-3.jpg) no-repeat scroll 0 0 transparent; }	
+.focusImg-nav{float:left;width:96px; }
+.focusImg-nav li{float:right; height:202px; width:32px; background:url(img/fnav-all.jpg) no-repeat scroll 0 0 transparent; cursor:pointer; }
+.focusImg-nav li.current{float:left;}
+.focusImg-nav #fnav-2{  background-position:-56px 0px; }
+.focusImg-nav #fnav-3{  background-position:-112px 0px; }   
+
+/*公告活动*/
+.gg{background:url(img/gonggao.png) no-repeat; height:165px}
+.gg .title{ padding-left:1px; height:26px}
+.gg .title li{ float:left; color:#5E5E5E; width:115px; text-align:center; line-height:26px}
+.gg .title .active{ font-weight:bold; color:#007DB8; background:url(img/ggtab.png) no-repeat;margin-top:1px; display:block}
+.gg .title .ggtab1{ ;}
+.gg .tab-contents { display:none;width:215px; padding:10px 5px 10px 10px}
+.gg .tab-contents li{ line-height:25px}
+.gg .tab-contents .right{ color:#A2A2A2}
+.gg .active{ display:block}
+.hd { width:232px; border:1px solid #CCCCCC; height:102px;}
+.hd img{ padding:3px}
+
+/*热门游戏推荐*/
+.ltitle{background:url(img/longbar.png) no-repeat; height:32px; line-height:32px}
+.ltitle h2{ padding-left:30px}
+.ltitle .right{ padding-right:10px}
+.hotgame{background:url(img/gamebg.png) 0 bottom repeat-x; height:225px; width:725px;}
+.hotgame .ctrl-prev{background:#fff url(img/tabl.png) 0 center no-repeat; height:225px; float:left; width:28px; text-indent:-999em;}
+.hotgame .ctrl-body{float:left; overflow:hidden; width:669px;height:225px; text-align:center}
+.hotgame .ctrl-body div{width:10000px; height:225px}
+.hotgame .ctrl-body ul{float:left;}
+.hotgame .ctrl-body li{ width:223px; float:left; height:225px}
+.hotgame .ctrl-body li img{ padding:1px; border:1px solid #A5A5A5; margin-bottom:7px; height:140px; width:210px}
+.hotgame .ctrl-body li p{color:#666666;width:210px; height:18px; line-height:18px; margin:10px 0}
+.hotgame .ctrl-body li .ggame{ margin-left:20px}
+.hotgame .ctrl-next{background:#fff url(img/tabr.png) 0 center no-repeat; height:225px;float:left;width:28px; text-indent:-999em;}
+.hotgame .ctrl-prev a,.hotgame .ctrl-next a{display:block; outline:none; height:225px;}
+
+
+/*分类索引*/
+.bd-tabs{ width:239px;float:left; overflow:hidden; }
+.bd-tabs li{background:url(img/ltab.png) 0 bottom; height:30px; text-align:center; line-height:30px; font-weight:bold; color:#5E5E5E;}
+.bd-tabs .first{background:url(img/ltab.png) 0 top; height:31px}
+.bd-tabs .active{background:url(img/ltaby.png); height:33px;line-height:32px; color:#fff}
+.bd-contants{ border:1px solid #DCDCDC; width:719px; float:left; overflow:hidden; height:122px}
+.bd-contants .bd-1 { display:none}
+.bd-contants .active{ display:block}
+.bd-contants .bd-1 .bd-tabs{background:url(img/ltabb.png); height:31px; text-align:center; line-height:31px; font-weight:bold; color:#5E5E5E; float:left; width:80px}
+.bd-contants .bd-tabs1 { height:31px;}
+.bd-contants .bd-tabs1 .active{background:url(img/ltabd.png); width:79px;}
+.bd-contants .bd-1 .active{ display:block}
+.bd-contants .bd-2 { display:none}
+.bd-contants .bd-2 ul{ display: inline-block}
+.bd-contants .bd-2 li{ float:left; width:80px; color:#5E5E5E; text-align:center; height:30px; line-height:30px}
+.bd-contants .bd-2 ul .bd-3 { width:30px}
+
+/*开服发卡客服*/
+.title1{ background:url(img/bar1.png); height:30px; line-height:30px; width:231px; float:left}
+.title1 h2{ color:#5E5E5E; font-weight:bold; padding-left:35px}
+.title2{ background:url(img/bar2.png); height:23px; line-height:23px; width:231px; float:left}
+.title2 table{ font-weight:bold;color:#5E5E5E; text-align:center}
+.title3{ background:url(img/bar3.png); height:30px; line-height:30px; width:231px; float:left}
+.title3 h2{ color:#5E5E5E; font-weight:bold; padding-left:35px}
+.title4{ background:url(img/bar4.png); height:30px; line-height:30px; width:231px; float:left}
+.title4 h2{ color:#5E5E5E; font-weight:bold; padding-left:35px}
+.kf{background:url(img/kf.png) bottom repeat-x;width:229px; border:1px solid #CCCCCC; text-align:center; color:#5E5E5E; line-height:28px; float:left}
+.fh{background:url(img/kf.png) bottom repeat-x;width:229px; border:1px solid #CCCCCC; text-align:center; color:#5E5E5E; line-height:30px; float:left}
+.fh .lh { width:60px}
+.fh .lh a{background:url(img/lhao.png) center center no-repeat transparent;width:46px; height:21px; line-height:21px;display:block; margin:0 auto; text-indent:-9999px}
+.fh tr{ background:url(img/dotline.png) bottom no-repeat;}
+.cs{width:229px; border:1px solid #CCCCCC; text-align:center; color:#5E5E5E;float:left; height:146px}
+.cs .onsev{ width:186px; height:64px;background:url(img/onsev.png) 0 0 no-repeat; margin:0 auto; line-height:64px;}
+.cs .onsev a{ width:134px; height:45px; display:block; margin:8px 0 0 48px; text-indent:-9999px; position:absolute}
+.cs p{ text-align:left; padding-left:20px; line-height:25px; height:25px;margin:0 auto}
+.cs p em{ font-weight:bold; height:25px; line-height:25px}
+.cs p .qq{ background:url(img/qq-icon.gif)  left center no-repeat; width:17px; height:18px;padding-left:17px; position:absolute; line-height:18px; display:inline}
+
+/*更多游戏推荐*/
+.moreg {width:725px; display:block; margin:0 auto; float:left;overflow:hidden }
+.moreg li{ width:174px; margin:6px 0px 0px 5px; float:left; border:1px solid #CDCDCD; background:url(img/gsbg.png) repeat-x; height:140px; overflow:hidden; display:inline;}
+.sgame{ padding:10px; width:154px; height:120px}
+.sgame img{ float:left; padding:1px; border:1px solid #BFBFBF; margin-right:10px}
+.sgame p{ margin:0; height:25px; line-height:25px; float:left;width:70px; }
+.sgame .lg{ margin:0; height:25px; line-height:25px; float:left; width:154px;}
+.sgame .lgame{ line-height:36px; margin-left:10px}
+
+
+/*个人信息*/
+.stitle{ background:url(img/sbar.png) 0 -310px no-repeat; height:48px; line-height:48px;}
+.stitle .right{ padding-right:24px; color:#007DB8}
+.info{background:url(img/infobg.png) top center no-repeat; height:651px}
+.colR .content{padding:15px;}
+.focusImg-containers .content{padding:0px;}
+.colRI{ float:left; width:105px; overflow:hidden;}
+.xim{ margin:20px 20px 0px 0px;  float:right; text-align:center; line-height:25px}
+.xim img{padding:1px;border:1px solid #CCCCCC; }
+.colLI{ float:left; width:570px; overflow:hidden;}
+.colLI h3{ font-size:14px; font-weight:bold;}
+.colLI tr{ height:30px;}
+.colLI td{font-size:14px;}
+.colLI p{ line-height:25px;}
+.infx{ margin:0 auto; width:420px; text-align:center}
+.infx a{ text-indent:-9999px; width:121px; height:34px; line-height:34px; display: inline-block;}
+.infx .x1{ background:url(img/inbu.png) 0 0 no-repeat;width:121px; height:34px; line-height:34px; display: inline-block; padding-right:20px}
+.infx .x2{ background:url(img/inbu.png) 0 -43px no-repeat;width:121px; height:34px; line-height:34px;display:inline-block;padding-right:20px}
+.infx .x3{ background:url(img/inbu.png) 0 -86px no-repeat;width:121px; height:34px; line-height:34px;display:inline-block}
+.tagsmap{width:550px; height:150px; position:relative}
+.tagsmap li{display:block; position:absolute; width:124px; height:45px; overflow:hidden; background:url(img/tagsbg.png) no-repeat; text-align:center; line-height:45px; font-size:14px; font-weight:bold; color:#000; cursor:pointer}
+.tagsmap li.tag1{background-position: left -50px;}
+.tagsmap li.tag2{background-position: left -100px;}
+.tagsmap li.tag3{background-position: left -150px;}
+.tagsmap li.tag4{background-position: left -200px;}
+.tagsmap li.tag5{background-position: left -250px;}
+.tagsmap li.tag6{background-position: left -300px;}
+.tagsmap li.tag7{background-position: left -350px;}
+.tagsmap li.tag8{background-position: left -400px;}
+.tagsmap li.tag9{background-position: left -450px;}
+.tagsmap li.tag10{background-position: left top;}
+
+/*我玩过的游戏*/
+.stitle2{ background:url(img/sbar.png) 0 -250px no-repeat; height:48px; line-height:48px;}
+.stitle2 .right{ padding-right:24px; color:#007DB8}
+.mg{ width:682px; height:144px; margin:10px 5px; border:1px solid #CCCCCC; background:url(img/mgbg2.png) repeat-x}
+.mg img{ padding:1px; border:1px solid #A5A5A5; margin:10px 0px 5px 10px}
+.mygame .active{background:url(img/mgbg1.png) repeat-x}
+
+/*分页*/
+.bot01 { margin: 0 auto; text-align: center; overflow: hidden;}
+.bot01 ul{ float: left; overflow: hidden; }
+.bot01 li{ float:left; width:16px; height:16px; line-height:16px; border:1px solid #C6C8C7; margin-left:5px; color:#007DB8;background:#FEFDFD; }
+.bot01 a,.bot01 a:active,.bot01 a:link,.bot01 a:visited{color:#007DB8; display:block; height:16px;}
+.bot01 .begin,.bot01 .End{width:50px;display:block;height:16px;}
+.bot01 .on,.bot01 a:hover {background:#007DB8; color:#fff; text-decoration: none; }
+.bot01 .on a:link, .bot01 .on a:visited{color:#fff; }
+.bot01 .page1{width:36px;}
+.bot01 .page1 input{width:30px; z-index:-1000; border:0px;}
+.bot01 .page2{border:0px; }
+.bot01 .dotted{border:0px; background:none;}
+.bot01 .not,.bot01 span{width:54px;display:block;height:16px; color:#007DB8; }
+
+/*充值*/
+.stitle3{ background:url(img/sbar.png) 0 -250px no-repeat; height:48px; line-height:48px;}
+.pay{ padding:5px;}
+.paypo{background:url(img/paypo.png) no-repeat; height:52px; line-height:52px;}
+.ptitle{ font-size:14px; font-weight:bold;}
+.chpay{ font-weight:bold; float:left; line-height:23px;}
+.chpay .right{background:url(img/chpay.png) no-repeat; float:right; width:163px; height:23px;font-weight:normal; padding-left:5px}
+.paylist{background:url(img/plbg.png)  left top repeat-x; width:480px; border:1px solid #BBD9E3; margin-left:65px; line-height:40px;overflow:hidden; float:left }
+.paylist ul{ padding-top:13px;}
+.paylist li{ float:left; width:90px; height:35px; margin:0px 14px 13px 14px; line-height:35px; border:1px  solid #D5D5D5; padding:0}
+.paynext{background:url(img/paynext.png) no-repeat; margin:0 auto; padding:0; width:142px;}
+.paynext a{height:43px; line-height:43px; display:block; text-indent:-9999px}
+.paypop{ width:387px; padding:1px; border:1px solid #CFCFCF; margin:0 auto;}
+.paypop .paypb{background:url(img/paypb.png) no-repeat; height:25px; line-height:25px;}
+.paypop p{ margin:0; padding:5px 15px;}
+.paypop .paypbu{background:url(img/paypbu.png) no-repeat;margin:0 auto; width:142px;}
+.paypop .paypbu a{height:43px; line-height:43px; display:block; text-indent:-9999px}
+
+/*新闻页*/
+.news { font-size:14px; padding:10px;}
+.news li{float:left; height:25px; line-height:25px; width:660px;background: url("http://img2.cache.netease.com/game/img09/index10/sprites1008.png") no-repeat scroll 0 -1430px transparent;padding-left: 9px;}
+.listdate{ float:right; font-size:12px; color:#7C7C7C}
+
+/*最新活动*/
+.stitle4{ background:url(img/sbar.png) 0 -123px no-repeat; height:48px; line-height:48px;}
+.stitle4 .right{ padding-right:24px; color:#007DB8}
+.act { width:682px; height:144px; margin:10px 5px; border:1px solid #CCCCCC; background:url(img/mgbg2.png) repeat-x; position:relative; display:block}
+.act .Game_Info{ line-height:25px;}
+.act .Act_info{ padding:10px 5px; text-align:left; line-height:25px; color:#2b2b2b; text-align:justify}
+.act img{ padding:1px; border:1px solid #A5A5A5; margin:10px 0px 5px 10px}
+.lastestAct .active{background:url(img/mgbg1.png) repeat-x}
+.act a.lgame{ position:absolute; right:10px; bottom:10px; overflow:hidden;}
+
+/*FAQ*/
+.stitle5{ background:url(img/sbar.png) 0 1px no-repeat; height:48px; line-height:48px;}
+.FAQ{ text-align:justify; line-height:24px;}
+
+/*页脚*/
+.footer{  height: 100px; padding-top: 15px;  color: #0077ac; text-align:center}
+.footer a:link, .footer a:visited, .foot{ color: #0077ac; }
+.footer a:hover, .footer a:active{ color: #ee5c29; }
+.foot .text{ border-color: #0077ac; padding:0 0 5px;}
+
+
+/*颜色定义*/
+.cwGray,.cwGray:visited,.cwGray a,.cwGray:hover{color:#5E5E5E;}
+.cwBlue,.cwBlue:visited,.cwBlue a,cwBlue:hover{color:#007DB8;}
+.cwOrange,.cwOrange:visited,.cwOrange a,cwOrange:hover{color:#EE5C29;}
+
+/*微博部分*/
+.hidden{display:none;}
+.show {display:block;}
+.wan-wb-block{ background:url(img/wb-frame.jpg) no-repeat scroll 0 0 transparent;width:540px; height:330px; overflow:hidden; padding:20px 70px; margin-left:20px;}
+.wan-wb-block h1{ font-family:"黑体"; font-size:30px; color:#4eb2e5; margin:0 auto; text-indent:0; text-align:center;  }
+.wan-wb-block .b-area{ font-size:16px; margin-bottom:15px; vertical-align:middle; margin-top:10px; display:inline-block; width:525px; }
+.wan-wb-block .b-area label{ display:inline-block; float:left; height:27px; line-height:27px; }
+.wan-wb-block .select-box{ background:url(img/wb-xlbt.png) no-repeat scroll 340px 5px transparent; width:360px; height:27px; border:1px solid #c2c2c2; position:relative; display:inline-block; cursor:pointer; }
+.wan-wb-block .select-box .selected-g{ line-height:27px; height:27px; color:#939393; padding-left:5px; } 
+.wan-wb-block .select-box .ui-select-list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B4B4B4;
+    cursor: pointer;
+    position: absolute;
+	top:27px;
+	left:0px;
+    width: 359px;
+}
+
+.wan-wb-block .select-box .ui-select-list li {
+    color: #4B4B4B;
+    line-height: 21px;
+    margin: 1px;
+    text-indent: 5px;
+}
+.wan-wb-block .select-box .ui-select-list li.hover {
+    background-color: #4472AE;
+    color: #FFFFFF;
+}
+.b-area textarea{ width:518px; height:112px; border:1px solid #c2c2c2; overflow-y:auto; overflow-x:hidden; }
+.b-area .right{ font-size:12px; color:#939393; line-height:27px;  margin-right: 5px;}
+.game_wb-btn {
+    background: url(img/wb-submitbt.png) no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    width: 143px;
+	text-decoration: none;
+	margin-right: 5px;
+}
+.game_wb-btn:hover,.game_wb-btn:link, .game_wb-btn:visited{color: #FFFFFF;text-decoration:none}
+.wb-title1{ background:url(img/wb-titile1.jpg) no-repeat scroll 0 0 transparent; height:47px; }
+.wb-title1 .right,.wb-title1 .right a { color:#2c91cc ; font-size:14px; line-height:47px; margin-right:25px; }
+.wb-title2{ background:url(img/wb-titile2.jpg) no-repeat scroll 0 0 transparent; height:31px; }
+.wb-content{ width:720;height:800; overflow-x:hidden; }
+

@@ -1,0 +1,32 @@
+/* CSS Document */
+*{margin:0; padding:0; font-family:"ËÎÌו"; font-size:12px; border:0px; list-style-type:none;}
+.clear{clear:both;}
+#head{width:1197px; height:229px; background-image:url(../images/head-bg.jpg); background-repeat:no-repeat; margin:0 auto;}
+#main{width:1197px; height:191px; background-image:url(../images/main-bg.jpg); background-repeat:no-repeat; margin:0 auto;  position:relative;}
+#foot{width:1197px; height:140px; background-image:url(../images/buttom-bg.jpg); background-repeat:no-repeat; margin:0 auto; background-color:#67cf31;}
+#nav{width:188px; height:26px; padding-top:38px; padding-right:17px; float:right;}
+#nav li{width:94px; float:left;}
+
+#login{width:272px; height:160px; background-image:url(../images/login-bg.jpg); background-repeat:no-repeat; position:relative; top:16px; left:133px; float:left;}
+#form{padding-top:30px; padding-left:25px;}
+#username,#password{width:183px; height:23px; background-image:url(../images/text.jpg); background-repeat:no-repeat; margin-bottom:10px; line-height:23px; padding-left:6px; vertical-align:middle;}
+#dl{width:98px; height:35px; background-image:url(../images/dlyx.jpg); background-repeat:no-repeat;}
+#zc{width:98px; height:35px; background-image:url(../images/zczh.jpg); background-repeat:no-repeat;}
+#xuanfu{width:138px; height:47px; background-image:url(../images/fwq.jpg); background-repeat:no-repeat; position:relative; top:16px; left:139px; float:left;}
+#xuanfu p{font-size:14px; line-height:47px; height:47px; padding-left:70px;}
+#libao{width:594px; height:161px; background-image:url(../images/lb.jpg); background-repeat:no-repeat;position:relative; top:15px; left:145px; float:left;}
+#xlh{width:232px; height:69px; background-image:url(../images/xlh.jpg); background-repeat:no-repeat; font-size:14px; line-height:69px; padding-left:17px; padding-right:17px; margin-top:66px; margin-left:145px; border:0px;}
+#dh{width:156px; height:57px; background-image:url(../images/duihuan.jpg); background-repeat:no-repeat; }
+#dlh{width:130px; margin:0 auto; padding-top:50px;}
+#dlh p{ font-size:14px; font-weight:bold;}
+#ksyx{width:106px; height:39px; background-image:url(../images/ksyx.jpg);}
+
+#shuoming{ height:120px;padding-top:20px; padding-left:100px;}
+#shuoming li{font-size:14px; line-height:36px;}
+#copyright{width:1197px; height:128px; background-image:url(../images/copyright-bg.jpg); background-repeat:no-repeat;}
+#copyright p{line-height:23px; text-align:center; color:#FFFFFF; padding-top:15px;}
+
+#login-content{ width:605px; height:337px; background-image:url(../images/login-bg2.jpg); background-repeat:no-repeat; position:absolute; top:200px; left:30%;}
+#close{width:51px; height:21px; background-image:url(../images/close.jpg); float:right; margin:10px 10px 0 0;}
+
+#reg{ margin-left:30px; margin-top:30px;}
