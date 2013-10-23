@@ -25,5 +25,8 @@
 	<classpathentry kind="lib" path="D:/workspace/Experiment/lib/protobuf-java-2.2.0.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/Experiment/lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/Experiment/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="lib/mongo-2.10.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.7.jar"/>
+	<classpathentry kind="lib" path="lib/javassist.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
