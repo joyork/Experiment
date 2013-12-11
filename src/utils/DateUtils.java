@@ -9,16 +9,21 @@ public class DateUtils {
 
 	
 	public static void main(String[] args) {
-		Calendar c = Calendar.getInstance();
-		c.set(Calendar.HOUR_OF_DAY, 3);
-		c.set(Calendar.MINUTE, 30);
-		c.set(Calendar.SECOND, 0);
-		Date date = c.getTime();
-		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-		System.out.println(sdf.format(date)); 
+//		Calendar c = Calendar.getInstance();
+//		c.set(Calendar.HOUR_OF_DAY, 3);
+//		c.set(Calendar.MINUTE, 30);
+//		c.set(Calendar.SECOND, 0);
+//		Date date = c.getTime();
+//		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+//		System.out.println(sdf.format(date)); 
+//		
+//		Time t = new Time(000000);
+//		
+//		System.out.println(t.toGMTString());
+
+		Date dt = new Date(1385693856282l);
+		System.out.println(dt); 
+
 		
-		Time t = new Time(000000);
-		
-		System.out.println(t.toGMTString()); 
 	}
 }
