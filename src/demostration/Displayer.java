@@ -14,9 +14,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.zip.DataFormatException;
+
+import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -25,6 +29,16 @@ public class Displayer {
 	private static Calendar calendar = Calendar.getInstance();
 	
 	public static void main(String[] args) {
+		
+		Map<String, String> jsonmap = new HashMap<String, String>();
+		jsonmap.put("pushtype", "doc");
+		jsonmap.put("id", "TXWQSDGWS");
+		jsonmap.put("content", "É­ÁÖ»÷°ÜÈÈ»ð");
+		JSONObject json = JSONObject.fromObject(jsonmap);
+
+		String jsontr = json.toString();
+		System.out.println(jsontr); 
+		
 		float f = 2.423f;
 		String fstr = new Float(f).toString();
 		BigDecimal r = new BigDecimal(fstr);
@@ -43,7 +57,7 @@ public class Displayer {
 		String email = "baiyw@sina.com";
 		System.out.println(email.matches("[^@]+@.*.[\\w]+"));
 		
-		Date d = new Date(1371089119000l);
+		Date d = new Date(1388073600000l);
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println(dateFormat.format(d));  
 		Date dd;
