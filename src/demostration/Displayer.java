@@ -1,6 +1,9 @@
 package demostration;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
@@ -13,72 +16,73 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.Pattern;
 import java.util.zip.DataFormatException;
 
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
 
+import com.google.common.collect.Lists;
+
 
 public class Displayer {
 	private static Calendar calendar = Calendar.getInstance();
-	
-	public static void main(String[] args) {
-		
-		Map<String, String> jsonmap = new HashMap<String, String>();
-		jsonmap.put("pushtype", "doc");
-		jsonmap.put("id", "TXWQSDGWS");
-		jsonmap.put("content", "森林击败热火");
-		JSONObject json = JSONObject.fromObject(jsonmap);
 
-		String jsontr = json.toString();
-		System.out.println(jsontr); 
-		
-		float f = 2.423f;
-		String fstr = new Float(f).toString();
-		BigDecimal r = new BigDecimal(fstr);
-		System.out.println(r); 
-		
-		
-		String engdate = "January 23, 2013";
-		DateFormat engdateFormat = new SimpleDateFormat("MMMM dd, yyyy", Locale.ENGLISH);
+	private static final Pattern SPACE = Pattern.compile("\t");
+
+	public static void main(String[] args) {
+
+		File poidata = new File("resources/57.txt");
+		double max = 0.0;
+		int maxc = 0; 
 		try {
-			Date ed = engdateFormat.parse(engdate);
-		} catch (ParseException e1) {
+			BufferedReader reader = new BufferedReader(new FileReader(poidata));
+			String line = null;
+			int  count=0;
+
+			while ((line = reader.readLine())!=null) {
+			    String[] cols = SPACE.split(line);
+			    String name = null;
+			    // sometimes there are multiple separator spaces
+			    ArrayList<Double> doubles = Lists.newArrayList();
+			    if(cols.length==26){
+			    	name = cols[0]+"-"+cols[1];
+			    	for (int i=2;i<26;i++) {
+			    		String value = cols[i];
+			    		double dvalue =Double.valueOf(value); 
+			    		if( dvalue>max){
+			    			max = dvalue;
+			    			maxc = count;
+			    		}
+			    		if (!value.isEmpty()) {
+			    			doubles.add(Double.valueOf(value));
+			    		}
+			    	}
+			    	System.out.println(name + " "+doubles.size()+ " last:" +doubles.get(23) ); 
+			    }
+			    count++;
+//			    if(count>15){
+//			    	break;
+//			    }
+			}
+		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}  
-				
-		String email = "baiyw@sina.com";
-		System.out.println(email.matches("[^@]+@.*.[\\w]+"));
-		
-		Date d = new Date(1388073600000l);
-		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		System.out.println(dateFormat.format(d));  
-		Date dd;
-		try {
-			dd = dateFormat.parse("2013-03-13 00:00:00");
-			System.out.println("dd after now:"+dd.after(new Date())); 
-			System.out.println(dd.getTime());
-		} catch (ParseException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String content = "t>当前版本：</dt><dd itemprop=\"softwareVersion\">因设备而异</dd><dt ite";
-		String cVersion = ParserUtils.getRegexValue("$(<dd itemprop=\"softwareVersion\">)", content);
-		System.out.println(cVersion);
-//		int dayspan = getDaySpan(1361030400l,1362067200l);
-//		System.out.println(dayspan);
-//		
-//		List<String> dayList = parsePeriod(1361030400l, 1362067200l);
-//		for (String day : dayList) {
-//			System.out.println(day); 
-//		}
+
+	    System.out.println("max:"+max+" maxline:"+maxc); 
     }
 
 	
