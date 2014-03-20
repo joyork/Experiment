@@ -37,5 +37,17 @@
 	<classpathentry kind="lib" path="lib/lucene-analyzers-3.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-core-3.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/guava-14.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/spring-asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-tx-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-3.1.1.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

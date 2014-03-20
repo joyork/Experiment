@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<!-- 国际化支持的定义在文件名为messages的文件中 -->
+			<!-- 存放信息资源的文档的名称为messages.properties或messages.calss -->
+			<value>messages</value>
+		</property>
+	</bean>
+	<bean id="log" class="event.Log" />
+	<bean id="listener" class="event.LogListener" />
+</beans>
