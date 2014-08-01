@@ -10,17 +10,19 @@ public class RegexTester {
 	public static void main(String[] args) {
 //		String input = "a234bcde98fg";
 //		String pattern = "\\d{2}";
-//		Pattern p = Pattern.compile(pattern);
-//		Matcher match = p.matcher(input);
-//		while (match.find()) {
-//			String con = match.group();
-//			System.out.println(con); 
-//		}
+		String input = "/admin/poilist/233edit";
+		String pattern = "^/admin/poilist/[^/]*$";
+		Pattern p = Pattern.compile(pattern);
+		Matcher match = p.matcher(input);
+		while (match.find()) {
+			String con = match.group();
+			System.out.println(con); 
+		}
 	
-		String pattern = "$(<dd itemprop=\"softwareVersion\">)";
-		String content = "<dt>µ±Ç°°æ±¾£º</dt><dd itemprop=\"softwareVersion\">3.3.0</dd>";
-		String result = RegexTester.getTextBySelector(pattern, content);
-		System.out.println(result);
+//		String pattern = "$(<dd itemprop=\"softwareVersion\">)";
+//		String content = "<dt>å½“å‰ç‰ˆæœ¬ï¼š</dt><dd itemprop=\"softwareVersion\">3.3.0</dd>";
+//		String result = RegexTester.getTextBySelector(pattern, content);
+//		System.out.println(result);
 	
 	}
 	
@@ -41,9 +43,9 @@ public class RegexTester {
 			return "";
 		}
 
-		// È¥³ıÎŞendtagµÄ¸ÉÈÅ
+		// å»é™¤æ— endtagçš„å¹²æ‰°
 		content = content.replaceAll(startTag + "[^<>]*/>", "");
-		// tagµÄÆğÊ¼Ö§³ÖÕıÔò
+		// tagçš„èµ·å§‹æ”¯æŒæ­£åˆ™
 		int pos = -1;
 		Matcher matcher = Pattern.compile(tagSelect).matcher(content);
 		if (matcher.find()) {
@@ -53,7 +55,7 @@ public class RegexTester {
 			return "";
 		}
 		int from = pos;
-		// ÎªÁËºÍÑ­»·ÖĞµÄ+1Ò»ÖÂ
+		// ä¸ºäº†å’Œå¾ªç¯ä¸­çš„+1ä¸€è‡´
 		pos--;
 		int depth = 1;
 		while (depth > 0) {

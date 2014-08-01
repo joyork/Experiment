@@ -49,5 +49,6 @@
 	<classpathentry kind="lib" path="lib/spring-web-3.1.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-webmvc-3.1.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-aop-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/activemq-all-5.9.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

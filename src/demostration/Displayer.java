@@ -41,48 +41,8 @@ public class Displayer {
 
 	public static void main(String[] args) {
 
-		File poidata = new File("resources/57.txt");
-		double max = 0.0;
-		int maxc = 0; 
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader(poidata));
-			String line = null;
-			int  count=0;
-
-			while ((line = reader.readLine())!=null) {
-			    String[] cols = SPACE.split(line);
-			    String name = null;
-			    // sometimes there are multiple separator spaces
-			    ArrayList<Double> doubles = Lists.newArrayList();
-			    if(cols.length==26){
-			    	name = cols[0]+"-"+cols[1];
-			    	for (int i=2;i<26;i++) {
-			    		String value = cols[i];
-			    		double dvalue =Double.valueOf(value); 
-			    		if( dvalue>max){
-			    			max = dvalue;
-			    			maxc = count;
-			    		}
-			    		if (!value.isEmpty()) {
-			    			doubles.add(Double.valueOf(value));
-			    		}
-			    	}
-			    	System.out.println(name + " "+doubles.size()+ " last:" +doubles.get(23) ); 
-			    }
-			    count++;
-//			    if(count>15){
-//			    	break;
-//			    }
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	    System.out.println("max:"+max+" maxline:"+maxc); 
+		int idx = (int) Math.round(2 * Math.random()); 
+		System.out.println(idx); 
     }
 
 	
