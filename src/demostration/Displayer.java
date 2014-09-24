@@ -6,15 +6,18 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
@@ -27,10 +30,11 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.zip.DataFormatException;
 
-import net.sf.json.JSONObject;
-
 import org.apache.commons.lang.StringUtils;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Lists;
 
 
@@ -40,10 +44,14 @@ public class Displayer {
 	private static final Pattern SPACE = Pattern.compile("\t");
 
 	public static void main(String[] args) {
-
-		int idx = (int) Math.round(2 * Math.random()); 
-		System.out.println(idx); 
-    }
+		String users = "[\"a\",\"b\",\"c\",\"d\"]";
+//		JSONObject userJson = JSON.parseObject(users);
+		JSONArray ua = JSON.parseArray(users);
+		for(int i=0;i<ua.size();i++){
+			System.out.println(ua.get(i));
+		}
+			
+	}
 
 	
 	public static  String strparse(String url,String uri){
