@@ -26,6 +26,16 @@ public class RegexTester {
 	
 	}
 	
+	public static String parseByPattern(String pattern, String content){
+		String result = "";
+		Pattern p = Pattern.compile(pattern);
+		Matcher match = p.matcher(content);
+		while (match.find()) {
+			
+			result = match.group(1);
+		}
+		return result;
+	}
 	
 	public static String getTextBySelector(String patternStr, String content) {
 		if (StringUtils.isEmpty(content)) {

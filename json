@@ -1,0 +1,8 @@
+查看设置过期时间redis（双机）
+sankuai@xianfu-wasp-portal01:/opt/logs/logs$ cat card_portal.log.2014-12-02 |grep PoiPortalService |grep Exception
+
+查看踢人发送remove消息（双机）
+[sankuai@xianfu-wasp-maslow01 logs]$ cat maslow_channel.log.2014-12-02 |grep ChannelAdminController  
+
+查看踢人Job（仅01）
+[sankuai@xianfu-wasp-analytics01 logs]$ tail -100f wasp_analytics.log.2014-12-02 |grep MacExpire
