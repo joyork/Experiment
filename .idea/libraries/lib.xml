@@ -1,0 +1,58 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/mongo-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/activemq-all-5.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-aop-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hive-exec-0.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hadoop-core-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/IKAnalyzer-3.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jxl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-tx-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ezmorph-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/im4java-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Market-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-support-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-asm-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/nekohtml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxen-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-14.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-expression-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene-core-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-digester-1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-lib-2.2-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/htmlparser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene-analyzers-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pinyin4j-2.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jdbc-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fastjson-1.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/protobuf-java-2.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jedis_trunk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsoup-1.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-aspects-3.1.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

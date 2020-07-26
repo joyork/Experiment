@@ -12,7 +12,11 @@ public static void main(String[] args) {
 //	boolean hasOpenGame = (openingGameList.size()!=0);
 //	
 //	System.out.println(hasOpenGame);
-	System.out.println(getScoreByVotes(3, 6, 3)); 
+//	float scoreByVotes = Gender.getScoreByVotes(2, 3, 4);
+//	Gender.getScoreByVotes(1,3, 4);
+//	Gender.getScoreByVotes();
+
+//	System.out.println(getScoreByVotes(3, 6, 3));
 }
 
 public static float getScoreByVotes(int goodVote, int normVote, int badVote) {
